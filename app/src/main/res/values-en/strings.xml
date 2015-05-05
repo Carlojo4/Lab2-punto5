@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">Lab2-punto5</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="name">Name: </string>
+    <string name="correo">Email: </string>
+    <string name="telefono">Telephone: </string>
+    <string name="sex">Sex: </string>
+    <string name="masc">Male</string>
+    <string name="fem">Female</string>
+    <string name="ciudad">City: </string>
+    <string name="hobbies">Hobbies: </string>
+    <string name="depor">Sports</string>
+    <string name="ent">Entertaiment</string>
+    <string name="lectura">Reading</string>
+    <string name="dormir">Sleep</string>
+    <string name="cur_date">Birth Date (M-D-YYYY): </string>
+    <string name="ch_label">Date</string>
+    <string name="enviar">Send</string>
+    <string name="select">Choose a city...</string>
+    <string-array name="cities_array">
+        <item>BARRANQUILLA</item>
+        <item>BARBOSA</item>
+        <item>AGUA DE DIOS</item>
+        <item>BOGOTA, D.C.</item>
+        <item>ARMENIA</item>
+        <item>ALBAN</item>
+        <item>BUCARAMANGA</item>
+        <item>BELLO</item>
+        <item>ALCALA</item>
+        <item>CALI</item>
+        <item>CALARCA</item>
+        <item>ANAPOIMA</item>
+        <item>MANIZALES</item>
+        <item>CALDAS</item>
+        <item>ANDALUCIA</item>
+        <item>MEDELLIN</item>
+        <item>CARTAGENA</item>
+        <item>ANSERMA</item>
+        <item>PEREIRA</item>
+        <item>CHIA</item>
+        <item>ANSERMANUEVO</item>
+        <item>COPACABANA</item>
+        <item>APULO</item>
+        <item>COTA</item>
+        <item>ARAUCA</item>
+        <item>CUCUTA</item>
+        <item>ARBELAEZ</item>
+        <item>DOSQUEBRADAS</item>
+        <item>ARGELIA</item>
+        <item>EL CARMEN DE VIBORAL</item>
+        <item>BARRANCABERMEJA</item>
+        <item>EL SANTUARIO</item>
+        <item>BOLIVAR</item>
+        <item>ENVIGADO</item>
+        <item>BUENAVENTURA</item>
+        <item>FLORIDABLANCA</item>
+        <item>BUGALAGRANDE</item>
+        <item>GALAPA</item>
+        <item>CAICEDONIA</item>
+        <item>GIRARDOTA</item>
+        <item>CAJICA</item>
+        <item>GIRON</item>
+        <item>CALIMA</item>
+        <item>GUARNE</item>
+        <item>CANDELARIA</item>
+        <item>IBAGUE</item>
+        <item>CARMEN DE APICALA</item>
+        <item>ITAGUI</item>
+        <item>CARTAGO</item>
+        <item>JAMUNDI</item>
+        <item>CARURU</item>
+        <item>LA CALERA</item>
+        <item>COELLO</item>
+        <item>LA CEJA</item>
+        <item>DUITAMA</item>
+        <item>LA ESTRELLA</item>
+        <item>EL AGUILA</item>
+        <item>LA UNION</item>
+        <item>EL CAIRO</item>
+        <item>LA VIRGINIA</item>
+        <item>EL CERRITO</item>
+        <item>LETICIA</item>
+        <item>EL COLEGIO</item>
+        <item>MAICAO</item>
+        <item>EL DOVIO</item>
+        <item>MALAMBO</item>
+        <item>ESPINAL</item>
+        <item>MARINILLA</item>
+        <item>FACATATIVA</item>
+        <item>MOCOA</item>
+        <item>FLANDES</item>
+        <item>MONTERIA</item>
+        <item>FLORENCIA</item>
+        <item>MOSQUERA</item>
+        <item>FLORIDA</item>
+        <item>NEIVA</item>
+        <item>FUNZA</item>
+        <item>PALMAR</item>
+        <item>FUSAGASUGA</item>
+        <item>PASTO</item>
+        <item>GINEBRA</item>
+        <item>PIEDECUESTA</item>
+        <item>GIRARDOT</item>
+        <item>POPAYAN</item>
+        <item>GUACARI</item>
+        <item>PUERTO COLOMBIA</item>
+        <item>GUAMO</item>
+        <item>QUIBDO</item>
+        <item>ICONONZO</item>
+        <item>RETIRO</item>
+        <item>INIRIDA</item>
+        <item>RIOHACHA</item>
+        <item>IPIALES</item>
+        <item>RIONEGRO</item>
+        <item>LA MESA</item>
+        <item>SABANETA</item>
+        <item>LA VICTORIA</item>
+        <item>SAN ANDRES</item>
+        <item>MADRID</item>
+        <item>SANTA MARTA</item>
+        <item>MELGAR</item>
+        <item>SOLEDAD</item>
+        <item>MITU</item>
+        <item>TULUA</item>
+        <item>NARIÑO</item>
+        <item>TUNJA</item>
+        <item>NILO</item>
+        <item>VILLA DEL ROSARIO</item>
+        <item>OBANDO</item>
+        <item>VILLAVICENCIO</item>
+        <item>PAIPA</item>
+        <item>YOPAL</item>
+        <item>PASCA</item>
+        <item>YUMBO</item>
+        <item>PRADO</item>
+        <item>PROVIDENCIA</item>
+        <item>PUERTO</item>
+        <item>CARREÑO</item>
+        <item>PURIFICACION</item>
+        <item>RESTREPO</item>
+        <item>RICAURTE</item>
+        <item>RIOFRIO</item>
+        <item>ROLDANILLO</item>
+        <item>SALDAÑA</item>
+        <item>SAN ANTONIO DEL TEQUENDAMA</item>
+        <item>SAN GIL</item>
+        <item>SAN JOSE DEL GUAVIARE</item>
+        <item>SAN PEDRO</item>
+        <item>SANTO TOMAS</item>
+        <item>SASAIMA</item>
+        <item>SEVILLA</item>
+        <item>SILVANIA</item>
+        <item>SINCELEJO</item>
+        <item>SOACHA</item>
+        <item>SOGAMOSO</item>
+        <item>SUAREZ</item>
+        <item>TENJO</item>
+        <item>TIBACUY</item>
+        <item>TOCAIMA</item>
+        <item>TONA</item>
+        <item>TORO</item>
+        <item>TRUJILLO</item>
+        <item>ULLOA</item>
+        <item>URIBIA</item>
+        <item>VALLEDUPAR</item>
+        <item>VERSALLES</item>
+        <item>VIJES</item>
+        <item>VIOTA</item>
+        <item>YARUMAL</item>
+        <item>YOTOCO</item>
+        <item>ZARZAL</item>
+    </string-array>
+</resources>

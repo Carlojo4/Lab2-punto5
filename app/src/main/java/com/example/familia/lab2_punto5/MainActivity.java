@@ -19,6 +19,7 @@ import java.util.Calendar;
 
 
 public class MainActivity extends Activity {
+    static final int PICK_REQUEST=1337;
     private TextView nombre;
     private TextView correo;
     private TextView tel;
@@ -49,6 +50,17 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         setCurrentDate();
         addButtonListener();
+        nombre = (TextView)findViewById(R.id.tname);
+        correo =(TextView)findViewById(R.id.tcorreo);
+        tel = (TextView)findViewById(R.id.ttel);
+        sexo = (TextView)findViewById(R.id.tsex);
+        ciudad = (TextView)findViewById(R.id.tciudad);
+        hobbies = (TextView)findViewById(R.id.thobbies);
+        birth = (TextView)findViewById(R.id.tdate);
+        enombre = (EditText)findViewById(R.id.ename);
+        etel = (EditText)findViewById(R.id.etel);
+        ecorreo = (EditText)findViewById(R.id.ecorreo);
+        spinner1 = (Spinner) findViewById(R.id.spinner1);
     }
     public void select_h(View view){
         boolean checked = ((CheckBox) view).isChecked();
@@ -87,17 +99,6 @@ public class MainActivity extends Activity {
         }
     }
     public void submit(View view){
-        nombre = (TextView)findViewById(R.id.tname);
-        correo =(TextView)findViewById(R.id.tcorreo);
-        tel = (TextView)findViewById(R.id.ttel);
-        sexo = (TextView)findViewById(R.id.tsex);
-        ciudad = (TextView)findViewById(R.id.tciudad);
-        hobbies = (TextView)findViewById(R.id.thobbies);
-        birth = (TextView)findViewById(R.id.tdate);
-        enombre = (EditText)findViewById(R.id.ename);
-        etel = (EditText)findViewById(R.id.etel);
-        ecorreo = (EditText)findViewById(R.id.ecorreo);
-        spinner1 = (Spinner) findViewById(R.id.spinner1);
         String mostrar = "hobbies: ";
         String depor="Deportes";
         String enter="Entretenimiento";
@@ -177,6 +178,42 @@ public class MainActivity extends Activity {
             // set selected date into Date Picker
             date_picker.init(year, month, day, null);
         }
-    };
+    };    @Override
+        protected void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        String text1= nombre.getText().toString();
+        String text2= correo.getText().toString();
+        String text3= tel.getText().toString();
+        String text4= sexo.getText().toString();
+        String text5= ciudad.getText().toString();
+        String text6= hobbies.getText().toString();
+        String text7= birth.getText().toString();
 
+        outState.putString("string1",text1 );
+        outState.putString("string2",text2 );
+        outState.putString("string3",text3 );
+        outState.putString("string4",text4 );
+        outState.putString("string5",text5 );
+        outState.putString("string6",text6 );
+        outState.putString("string7",text7 );
+    }
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        // TODO Auto-generated method stub
+        super.onRestoreInstanceState(savedInstanceState);
+        String text1 = savedInstanceState.getString("string1");
+        String text2 = savedInstanceState.getString("string2");
+        String text3 = savedInstanceState.getString("string3");
+        String text4 = savedInstanceState.getString("string4");
+        String text5 = savedInstanceState.getString("string5");
+        String text6 = savedInstanceState.getString("string6");
+        String text7 = savedInstanceState.getString("string7");
+        nombre.setText(text1);
+        correo.setText(text2);
+        tel.setText(text3);
+        sexo.setText(text4);
+        ciudad.setText(text5);
+        hobbies.setText(text6);
+        birth.setText(text7);
+    }
 }
